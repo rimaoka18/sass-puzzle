@@ -24,7 +24,7 @@
       $color: nth(var.$buttonColor, $index_key);
 
       & > .#{$className} {
-        @include mixin.li($color);
+        @include mixin.element($color, 'li');
       }
     }
   }
@@ -61,7 +61,7 @@
         $color: nth(var.$buttonColor, $index_key);
 
         & > .#{$className} {
-          @include mixin.button($color);
+          @include mixin.element($color, 'button');
         }
       }
     }

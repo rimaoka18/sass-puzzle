@@ -1,12 +1,25 @@
-@mixin li ($color) {
-  width: 40px;
-  height: 40px;
-  background-color: $color;
+@mixin element($color, $type: 'li') {
+  @if $type == 'li' {
+    width: 40px;
+    height: 40px;
+    background-color: $color;
+  } @else if $type == 'button' {
+    width: 140px;
+    height: 40px;
+    background-color: $color;
+    border: solid 5px white;
+  }
 }
 
-@mixin button ($color) {
-  width: 140px;
-  height: 40px;
-  background-color: $color;
-  border: solid 5px white;
-}
+// @mixin li ($color) {
+//   width: 40px;
+//   height: 40px;
+//   background-color: $color;
+// }
+
+// @mixin button ($color) {
+//   width: 140px;
+//   height: 40px;
+//   background-color: $color;
+//   border: solid 5px white;
+// }
